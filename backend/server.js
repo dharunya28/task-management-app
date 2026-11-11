@@ -89,8 +89,8 @@ if (fs.existsSync(clientDist)) {
     });
 }
 
-// Central 404 handler for API routes
-app.use("/api/*", (req, res) => {
+// Central 404 handler for unmatched API routes
+app.use("/api", (req, res) => {
     res.status(404).json({ message: "API route not found" });
 });
 
