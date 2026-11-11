@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Render backend URL (used when running on GitHub Pages)
-const RENDER_BACKEND_URL = 'https://task-management-app.onrender.com';
+const RENDER_BACKEND_URL = 'https://task-management-app-krnb.onrender.com';
 
 const getBaseURL = () => {
   if (import.meta.env.VITE_API_URL) {
